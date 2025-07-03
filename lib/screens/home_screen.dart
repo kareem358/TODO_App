@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/models/todo_model.dart';
 import 'package:untitled/widgets/todo.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -20,9 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Center(
-            child: Container(height: 20,
-                child:  Text("TODO_List", style: TextStyle(fontSize: 16, fontWeight:FontWeight.bold),))),
+        title: Text("TODO_List", style: TextStyle(fontSize: 16, fontWeight:FontWeight.bold),),
+        centerTitle: true,
       ),
       // if single body element body: const Todo(),// importing the todo width in the body
       body: Column(
