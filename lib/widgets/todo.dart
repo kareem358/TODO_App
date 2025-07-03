@@ -31,7 +31,7 @@ class _TodoState extends State<Todo> {
       //  width: MediaQuery.of(context).size.width,//to fix container width with display
         decoration: BoxDecoration(
             color: widget.done ? Colors.green: Colors.red,
-            borderRadius: BorderRadius.circular(12)),
+            borderRadius: BorderRadius.circular(14)),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
