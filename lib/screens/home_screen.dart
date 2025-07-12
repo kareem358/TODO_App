@@ -34,8 +34,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemCount: todos.length, itemBuilder: (context, index){
                return InkWell(
                  onTap: (){
-                   todos[index].check= ! todos[index].check;
-                   setState(() {});
+
+                   setState(() {
+                     todos[index].check= ! todos[index].check;
+                   });
                  },
                  child: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -123,12 +125,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 },
                   child: Text(_showContent ? "Add Todo" : "New ToDo", style: TextStyle(fontWeight: FontWeight.bold),),),
-                Container(child: ElevatedButton(onPressed: (){
+                ElevatedButton(onPressed: (){
                   setState(() {
                     title.clear();  // Clear title field
                     desc.clear();   // Clear description field
                   });
-                }, child: Text('Clear', style: TextStyle(color: Colors.red),))),
+                }, child: Text('Clear', style: TextStyle(color: Colors.red),)),
                 ElevatedButton(onPressed: (){
                   setState(() {
                     _showContent = false; // Hide the container
