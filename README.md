@@ -1,16 +1,27 @@
-# untitled
+Simple To-Do List App in Flutter
 
-A new Flutter project.
+A basic yet functional Flutter app to manage your daily tasks. Users can add, view, mark complete, and delete To-Do items — all within a clean and responsive interface.
+Features
+-  Add a new task with a title and description
+-  Mark tasks as completed
+-  Delete tasks from the list
+-  Show/hide input form dynamically
+-  UI designed using Flutter's built-in widgets
+-  Clear feedback via `SnackBar` for empty input
 
-## Getting Started
+📱 Screenshots
+ 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tech Stack
+Flutter
+Dart
+State Management setState()`UI Widgets: `TextFormField`, `ListView.builder`, `ElevatedButton`, `SnackBar`
+Folder Structure
+lib/
+├── models/
+│ └── todo_model.dart # Model class for ToDo items
+├── widgets/
+│ └── todo.dart # Custom widget to display a ToDo
+├── screens/
+│ └── home_screen.dart # Main screen with list & form
+└── main.dart # App entry point
